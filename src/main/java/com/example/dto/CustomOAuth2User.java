@@ -20,7 +20,6 @@ public class CustomOAuth2User implements OAuth2User {
 	
 	@Override
 	public Map<String, Object> getAttributes() {
-		// TODO Auto-generated method stub
 		return null;
 	}
 

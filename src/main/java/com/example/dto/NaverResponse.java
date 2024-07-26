@@ -30,9 +30,4 @@ public class NaverResponse implements OAuth2Response{
 		return attribute.get("name").toString();
 	}
 
-	@Override
-	public String getMobile() {
-		return attribute.get("mobile").toString();
-	}
-
 }
