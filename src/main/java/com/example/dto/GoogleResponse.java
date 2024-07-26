@@ -12,31 +12,26 @@ public class GoogleResponse implements OAuth2Response {
 	
 	@Override
 	public String getProvider() {
-		// TODO Auto-generated method stub
 		return "google";
 	}
 
 	@Override
 	public String getProviderId() {
-		// TODO Auto-generated method stub
 		return attribute.get("sub").toString();
 	}
 
 	@Override
 	public String getEmail() {
-		// TODO Auto-generated method stub
 		return attribute.get("email").toString();
 	}
 
 	@Override
 	public String getName() {
-		// TODO Auto-generated method stub
 		return attribute.get("name").toString();
 	}
 
 	@Override
 	public String getMobile() {
-		// TODO Auto-generated method stub
 		// Google Not Mobile Info
 		return null;
 	}

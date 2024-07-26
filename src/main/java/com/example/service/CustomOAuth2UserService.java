@@ -6,6 +6,7 @@ import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 
+import com.example.dto.CustomOAuth2User;
 import com.example.dto.GoogleResponse;
 import com.example.dto.NaverResponse;
 import com.example.dto.OAuth2Response;
@@ -37,7 +38,9 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService{
 			return null;
 		}
 		
-		// ...
+		String role = "ROLE_USER";
+		
+		return new CustomOAuth2User(oAuth2Response, role);
 		
 	}
 	
